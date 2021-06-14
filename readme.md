@@ -4,3 +4,5 @@
 - Alexandre Junior
 - Emanoela Simão
 - Ingrid Vaz
+
+parte 1 - https://github.com/Xandstf/PW4 
