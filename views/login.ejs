@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login | Receitas</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- My Styles.css-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/loginStyle.css">
+
+    </head>
+    <body>
+        <!-- Data recived -->
+        <div id="dataRecived" style="display: none;">
+            <% if (status) { %>
+                <%= status %>
+            <% } %>
+        </div>
+        <!-- End data recived -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 cardBody">
+                    <div class="loginCard">
+                        <div class="loginHeaderText"><img src="./img/bookLogo.png" width="40px" style="margin-right: 10px; margin-top: -5px">LIVRO DE RECEITAS</div>
+                        <div class="loginOption">
+                            <button class="btn btn-dark btnLogin btnEntrar" onclick="toogleOptionLogin('entrar')">ENTRAR</button>
+                            <button class="btn btn-dark btnLogin btnCadastro" onclick="toogleOptionLogin('cadastrar')">CADASTRAR</button>
+                        </div>
+                        <!-- Login Section -->
+                        <form action="autenticar" method="POST">
+                            <div class="loginSection">
+                                <p id="errorTextLogin"></p>
+                                <input name="usuario" class="inputLogin inputUsuario" type="text" placeholder="Usuário">
+                                <input name="senha" class="inputLogin inputSenha" type="password" placeholder="Senha">
+                                <button class="btn btn-dark btnFormLogin">LOGIN</button>
+                                <a class="loginForgotPassword" onclick="toogleOptionLogin('senha')"><p>Esqueceu sua senha?</p></a>
+                            </div>
+                        </form>
+                        <!-- Cadastro Section -->
+                        <form action="cadastrar" method="POST">
+                            <div class="cadastroSection">
+                                <p id="errorTextCadastro"></p>
+                                <input name="nome" class="inputLogin inputCadastroUsuario" type="text" placeholder="Nome">
+                                <input name="usuario" class="inputLogin" type="text" placeholder="Usuário">
+                                <input name="senha" class="inputLogin" type="password" placeholder="Senha">
+                                <button class="btn btn-dark btnFormLogin">CADASTRAR</button>
+                            </div>
+                        </form>
+                        <!-- Senha Section -->
+                        <div class="senhaSection">
+                            <p class="infoText">Preencha os campos para recuperar sua senha!</p>
+                            <input name="usuario" class="inputLogin" type="text" placeholder="Usuário">
+                            <input name="email" class="inputLogin" type="text" placeholder="Email">
+                            <button class="btn btn-dark btnFormLogin" onclick="toogleOptionLogin('email')">ENVIAR E-MAIL</button>
+                        </div>
+                        <!-- Email Section -->
+                        <div class="emailSection">
+                            <i class="fas fa-envelope iconeEmail"></i>
+                            <p class="infoText">
+                                Verifique sua caixa de entrada e responda as perguntas para darmos início a recuperação da sua senha.
+                            </p>
+                            <button class="btn btn-dark btnFormLogin" onclick="toogleOptionLogin('entrar')">VOLTAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/loginScript.js"></script>
+        <!-- End My scripts -->
+    </body>
+</html>
+
