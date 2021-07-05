@@ -22,19 +22,32 @@ class Home extends Component {
 
 	render() {
 		const { usuario } = this.state;
-		return (
-			<div className="App">
-				<h2 className="welcome-message">Boas vindas, {usuario.nome}</h2>
-
-				<button className="back-button">
-					<Link to={"./receitas"}>Visualizar receitas</Link>
-				</button>
-
-				<button className="back-button ${usuario.permissao}">
-					<Link to={"./cadastro"}>Cadastrar Nova Receita</Link>
-				</button>
-			</div>
-		);
+		if(usuario.permissao==="ADM"){
+			return (
+				<div className="App">
+					<h2 className="welcome-message">Boas vindas, {usuario.nome}</h2>
+	
+					<button className="back-button">
+						<Link to={"./receitas"}>Visualizar receitas</Link>
+					</button>
+				
+					<button className="back-button ${usuario.permissao}">
+						<Link to={"./cadastro"}>Cadastrar Nova Receita</Link>
+					</button>
+				</div>
+			);
+		}else{
+			return (
+				<div className="App">
+					<h2 className="welcome-message">Boas vindas, {usuario.nome}</h2>
+	
+					<button className="back-button">
+						<Link to={"./receitas"}>Visualizar receitas</Link>
+					</button>
+				
+				</div>
+			);
+		}
 	}
 }
 export default Home;
