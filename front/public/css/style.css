@@ -31,7 +31,8 @@ html{
     align-items: center;
 }
 
-.App button {
+.App button,
+.App input.back-button {
     display: block;
     background-color: white;
     width: 100%;
@@ -45,6 +46,10 @@ html{
     cursor: pointer;
 }
 
+.App input.back-button {
+    font-size: 24px;
+}
+
 .App .welcome-message {
     text-align: center;
 }
@@ -53,7 +58,6 @@ html{
     text-align: center;
     color: inherit;
     font-size: 24px;
-   
     text-decoration: none;
 }
 
@@ -93,7 +97,6 @@ html{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: calc(100% - 300px);
-    
     margin-bottom: 20px;
     gap: 20px;
 }
@@ -103,6 +106,38 @@ html{
    padding: 20px;
 }
 
-.App button.back-button {
+.App .receita-body .secao pre {
+    white-space: break-spaces;
+}
+
+.App button.back-button
+.App input.back-button {
     max-width: 300px;
+}
+
+.App .secao-form {
+    margin: 20px;
+}
+
+.App .form {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.App .secao-form {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.App .secao-form label {
+    font-size: 20px;
+}
+
+.App .secao-form input,
+.App .secao-form textarea {
+    font-size: 20px;
+   margin-left: 20px;
 }

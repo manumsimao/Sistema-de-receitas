@@ -133,7 +133,6 @@ app.get("/api/receitas", function (req, res) {
 });
 
 app.post("/api/receitas", async function (req, res) {
-  console.log(req.body);
   var id = req.body.id;
   var nome = req.body.nome;
   var secao = req.body.secao;

@@ -21,9 +21,7 @@ function Receita() {
 					return (
 						<div className="secao">
 							<h3 className="section-title">{item.nome}</h3>
-							{item.conteudo.map((conteudo) => {
-								return <p>{conteudo}</p>;
-							})}
+							<pre>{item.conteudo}</pre>
 						</div>
 					);
 				})}

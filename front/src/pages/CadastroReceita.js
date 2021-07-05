@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default class CadastroReceita extends Component {
   constructor(props) {
@@ -7,26 +8,31 @@ export default class CadastroReceita extends Component {
     this.state = {
       id: " ",
       nome: " ",
-      ingredientes: "",
-      secao: [
-        {
-          nome: "Modo de Preparo",
-          conteudo: [" "],
-        },
-        {
-          nome: "Outras informações",
-          conteudo: [" "],
-        },
-      ],
+      ingredientes: [],
+      modo: [],
+      outras: []
     };
   }
 
   async handleSubmit(event) {
     event.preventDefault();
-    const secao = [{ nome: "Ingredientes", conteudo: this.ingredientes }];
+    let secao= [
+      {
+        nome: "Ingredientes",
+        conteudo: this.state.ingredientes,
+      },
+      {
+        nome: "Modo de Preparo",
+        conteudo: this.state.modo,
+      },
+      {
+        nome: "Outras informações",
+        conteudo: this.state.outras,
+      },
+    ];
     await axios
       .post(
-        "http://localhost/cadastro",
+        "http://localhost/api/receitas",
         {
           id: this.state.id,
           nome: this.state.nome,
@@ -38,9 +44,7 @@ export default class CadastroReceita extends Component {
           },
         }
       )
-      .then((res) => {
-        console.log("aqui");
-      });
+
   }
 
   handleTextChange(event) {
@@ -54,6 +58,12 @@ export default class CadastroReceita extends Component {
       case "ingredientes":
         this.setState({ ingredientes: event.target.value });
         break;
+        case "modo":
+          this.setState({ modo: event.target.value });
+          break;
+          case "outras":
+            this.setState({ outras: event.target.value });
+            break;
       default:
         break;
     }
@@ -63,9 +73,9 @@ export default class CadastroReceita extends Component {
     return (
       <div>
         <form className="App" onSubmit={(event) => this.handleSubmit(event)}>
-          <div>
+          <div className="form">
             <h2 className="section-title">Cadastre sua receita</h2>
-            <div className="secao">
+            <div className="secao-form">
               <label>ID</label>
               <input
                 name="receita"
@@ -75,7 +85,7 @@ export default class CadastroReceita extends Component {
                 required
               />
             </div>
-            <div className="secao">
+            <div className="secao-form">
               <label>Nome</label>
               <input
                 name="receitaNome"
@@ -85,9 +95,9 @@ export default class CadastroReceita extends Component {
                 required
               />
             </div>
-            <div className="secao">
+            <div className="secao-form">
               <label>Ingredientes</label>
-              <input
+              <textarea
                 name="ingredientes"
                 className="receita-conteudo"
                 onChange={(event) => this.handleTextChange(event)}
@@ -95,25 +105,30 @@ export default class CadastroReceita extends Component {
                 required
               />
             </div>
-            <div>
+            <div className="secao-form">
               <label>Modo de preparo</label>
-              <input
+              <textarea
+              name="modo"
                 className="receita-conteudo"
                 onChange={(event) => this.handleTextChange(event)}
                 placeholder="Modo de preparo"
                 required
               />
             </div>
-            <div>
+            <div className="secao-form">
               <label>Outras informações</label>
-              <input
+              <textarea
+              name="outras"
                 className="receita-conteudo"
                 onChange={(event) => this.handleTextChange(event)}
-                placeholder="Modo de preparo"
+                placeholder="Outras informações"
                 required
               />
             </div>
-            <input type="submit" value="Enviar" />
+            <input className="back-button" type="submit" value="Enviar" />
+            <button className="back-button">
+					<Link to={"./receitas"}>Voltar para lista de receitas</Link>
+				</button>
           </div>
         </form>
       </div>

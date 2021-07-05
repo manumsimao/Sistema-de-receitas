@@ -6,14 +6,14 @@
       {
         "nome": " Ingredientes",
         "conteudo": [
-          "50 g farinha de milho fina",
-          "10 g de cacau em pó",
-          "250 g de chocolate meio amargo",
-          "200 g de manteiga sem sal cortada em cubos",
-          "20 ml de suco de gengibre",
-          "5 ovos",
-          "200 g de açúcar",
-          "1 colher (chá) de fermento em pó",
+          "50 g farinha de milho fina\n",
+          "10 g de cacau em pó\n",
+          "250 g de chocolate meio amargo\n",
+          "200 g de manteiga sem sal cortada em cubos\n",
+          "20 ml de suco de gengibre\n",
+          "5 ovos\n",
+          "200 g de açúcar\n",
+          "1 colher (chá) de fermento em pó\n",
           "100 g de nozes picadas grosseiramente",
           " "
         ]
@@ -21,22 +21,22 @@
       {
         "nome": " Modo de Preparo",
         "conteudo": [
-          "1 - Coloque numa tigela a farinha de milho fina e o cacau em pó.",
-          "2 - Misture e reserve.",
-          "3 - Numa panela, em banho-maria, derreta o chocolate meio amargo picado com a manteiga sem sal cortada em cubos.",
-          "4 - Retire do fogo.",
-          "5 - Adicione o suco de gengibre e misture.",
-          "6 - Acrescente a mistura de farinha com cacau em pó (reservada acima). Misture bem e reserve.",
-          "7 - Numa batedeira, coloque os ovos e o açúcar. Bata bem até dobrar de volume.",
-          "8 - Com a batedeira ainda ligada, adicione o fermento em pó e bata até misturar.",
-          "9 - Desligue a batedeira. Acrescente a mistura de chocolate (reservada acima) e as nozes picadas. Misture.",
-          "10 - Transfira a massa para uma assadeira retangular (18 cm X 30 cm) untada e forrada com papel manteiga.",
-          "11 - Leve para assar em forno médio pré-aquecido a 180°C por +/- 40 minutos.",
-          "12 - Retire do forno.",
-          "13 - Cubra o brownie com papel manteiga.",
-          "14 - Coloque outra assadeira do mesmo tamanho pressionando levemente o brownie para que fique mais compacto e úmido",
-          "15 - Deixe por +/- 4 horas na geladeira.",
-          "16 - Retire a assadeira de cima do brownie, desenforme, corte em quadrados e sirva em seguida.",
+          "1 - Coloque numa tigela a farinha de milho fina e o cacau em pó.\n",
+          "2 - Misture e reserve.\n",
+          "3 - Numa panela, em banho-maria, derreta o chocolate meio amargo picado com a manteiga sem sal cortada em cubos.\n",
+          "4 - Retire do fogo.\n",
+          "5 - Adicione o suco de gengibre e misture.\n",
+          "6 - Acrescente a mistura de farinha com cacau em pó (reservada acima). Misture bem e reserve.\n",
+          "7 - Numa batedeira, coloque os ovos e o açúcar. Bata bem até dobrar de volume.\n",
+          "8 - Com a batedeira ainda ligada, adicione o fermento em pó e bata até misturar.\n",
+          "9 - Desligue a batedeira. Acrescente a mistura de chocolate (reservada acima) e as nozes picadas. Misture.\n",
+          "10 - Transfira a massa para uma assadeira retangular (18 cm X 30 cm) untada e forrada com papel manteiga.\n",
+          "11 - Leve para assar em forno médio pré-aquecido a 180°C por +/- 40 minutos.\n",
+          "12 - Retire do forno.\n",
+          "13 - Cubra o brownie com papel manteiga.\n",
+          "14 - Coloque outra assadeira do mesmo tamanho pressionando levemente o brownie para que fique mais compacto e úmido\n",
+          "15 - Deixe por +/- 4 horas na geladeira.\n",
+          "16 - Retire a assadeira de cima do brownie, desenforme, corte em quadrados e sirva em seguida.\n",
           " "
         ]
       },
@@ -55,12 +55,12 @@
       {
         "nome": " Ingredientes",
         "conteudo": [
-          "RECHEIO",
-          "2 colheres (sopa) de azeite1 colher (sopa) de alho picadinho100g de cebola picada500g de carne moída60g de extrato de tomate1⁄2 xícara (chá) de águaSalsinha a gostoPimenta síria a gostoSal a gosto",
-          "MASSA",
-          "150g de cebola cortada em cubos médios4 dentes de alho1 xícara (chá) de hortelã200g de trigo para quibe360ml de água fervente60ml de azeite1kg de carne moída1 xícara (chá) de tomate sem pele e sem semente cortado em cubosSal a gostoPimenta Síria a gosto",
-          "MOLHO DE IOGURTE",
-          "2 copos de iogurte natural2 colheres (sopa) de azeite1 limão (suco)Hortelã picadinho a gostoSal a gostoPimenta síria a gosto",
+          "RECHEIO\n",
+          "2 colheres (sopa) de azeite1 colher (sopa) de alho picadinho\n100g de cebola picada\n500g de carne moída60g de extrato de tomate\n1⁄2 xícara (chá) de água\nSalsinha a gosto\nPimenta síria a gostoSal a gosto",
+          "MASSA\n",
+          "150g de cebola cortada em cubos médios4 dentes de alho\n1 xícara (chá) de hortelã\n200g de trigo para quibe\n360ml de água fervente\n60ml de azeite\n1kg de carne moída\n1 xícara (chá) de tomate sem pele e sem semente cortado em cubos\nSal a gosto\nPimenta Síria a gosto",
+          "MOLHO DE IOGURTE\n",
+          "2 copos de iogurte natural\n2 colheres (sopa) de azeite\n1 limão (suco)\nHortelã picadinho a gosto\nSal a gostoPimenta síria a gosto",
           " "
         ]
       },
@@ -683,14 +683,8 @@
     "secao": [
       {
         "nome": " Ingredientes",
-        "conteudo": [
-          "BROWNIE COM CASTANHA DE CAJU",
-          "140g de farinha de trigo150g de manteiga sem sal150g de chocolate amargo em barra4 ovos320g de açúcar refinado100g de castanhas de caju picadas20g de cacau em póSal a gosto1 rolo de papel-manteiga",
-          "SORVETE DE CARTOLA",
-          "12 bananas bem maduras1 colher (sopa) de margarina1 lata de leite condensado1⁄2 lata de creme de leite50g de queijo coalho ralado finoCanela a gosto",
-          "BRIGADEIRO MOLE",
-          "1 colher (sopa) de manteigaChocolate em pó a gosto1 lata de leite condensado"
-        ]
+        "conteudo": 
+          "BROWNIE COM CASTANHA DE CAJU140g de farinha de trigo150g de manteiga sem sal150g de chocolate amargo em barra4 ovos320g de açúcar refinado100g de castanhas de caju picadas20g de cacau em póSal a gosto1 rolo de papel-manteiga\nSORVETE DE CARTOLA\n12 bananas bem maduras1 colher (sopa) de margarina1 lata de leite condensado1⁄2 lata de creme de leite50g de queijo coalho ralado finoCanela a gostoBRIGADEIRO MOLE\n1 colher (sopa) de manteigaChocolate em pó a gosto1 lata de leite condensado"
       },
       {
         "nome": " Modo de Preparo",
@@ -870,9 +864,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "teste",
-    "nome": "teste"
   }
 ]
