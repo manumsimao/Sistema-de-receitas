@@ -13,7 +13,6 @@ class Home extends Component {
 		this.getUsuario();
 	}
 
-	// Retrieves the list of items from the Express app
 	getUsuario = () => {
 		fetch("/api/usuario")
 			.then((res) => res.json())

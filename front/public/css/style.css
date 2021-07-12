@@ -141,3 +141,7 @@ html{
     font-size: 20px;
    margin-left: 20px;
 }
+
+.delete-button{
+    background-color: red !important;
+}

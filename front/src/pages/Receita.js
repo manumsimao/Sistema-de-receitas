@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -11,6 +12,11 @@ function Receita() {
 			.then((res) => res.json())
 			.then(setReceita);
 	}, [param]);
+
+	const handleDelete = () => {
+		 axios
+		.delete('http://localhost'+param);
+	}
 
 	if (receita) {
 		return (
@@ -26,6 +32,7 @@ function Receita() {
 					);
 				})}
                 </div>
+				<button className="delete-button" onClick={handleDelete()}>DELETAR RECEITA</button>
 				<button className="back-button">
 					<Link to={"./receitas"}>Voltar para lista de receitas</Link>
 				</button>

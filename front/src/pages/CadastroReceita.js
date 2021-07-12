@@ -14,6 +14,15 @@ export default class CadastroReceita extends Component {
     };
   }
 
+  clear(){
+    let fields = Array.from(document.querySelectorAll('input:not(.back-button), textarea'));
+    fields.forEach(
+      field => {
+        field.value = "";
+      }
+    )
+  }
+
   async handleSubmit(event) {
     event.preventDefault();
     let secao= [
@@ -44,7 +53,7 @@ export default class CadastroReceita extends Component {
           },
         }
       )
-
+        this.clear()
   }
 
   handleTextChange(event) {
@@ -122,7 +131,6 @@ export default class CadastroReceita extends Component {
                 className="receita-conteudo"
                 onChange={(event) => this.handleTextChange(event)}
                 placeholder="Outras informações"
-                required
               />
             </div>
             <input className="back-button" type="submit" value="Enviar" />

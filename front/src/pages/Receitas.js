@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 class Receitas extends Component {
-  // Initialize the state
   constructor(props){
     super(props);
     this.state = {
@@ -10,12 +9,10 @@ class Receitas extends Component {
     }
   }
 
-  // Fetch the list on first mount
   componentDidMount() {
     this.getList();
   }
 
-  // Retrieves the list of items from the Express app
   getList = () => {
     fetch('/api/receitas')
     .then(res => res.json())
@@ -28,10 +25,8 @@ class Receitas extends Component {
     return (
     <div className="App">
         <h2 className="section-title">Receitas</h2>
-        {/* Check to see if any items are found*/}
         {receitas.length ? (
           <div className="receitas">
-            {/* Render the list of items */}
             {receitas.map((item) => {
               var link = "./"+item.id;
               return(
@@ -53,7 +48,6 @@ class Receitas extends Component {
       </div>
       );
   }
-    
 }
 
 export default Receitas;
